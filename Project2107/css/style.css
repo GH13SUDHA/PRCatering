@@ -1,0 +1,813 @@
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #ffffff;
+    gap: 25px;
+}
+
+.logo h1 {
+    color: darkred;
+    font-size: 42px;
+}
+
+.logo h2 {
+    color: darkred;
+    font-size: 32px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #8B0000;
+}
+
+.contact-info i {
+    color: #8B0000;
+    font-size: 18px;
+}
+
+.contact-info a:hover i {
+    color: #25D366;
+}
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+nav {
+    background: #7b0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: gold;
+}
+
+nav button,
+.quote-btn {
+    background: gold;
+    color: #222;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.quote-btn:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+/* ========================================
+   HOME PAGE - HERO SECTION
+======================================== */
+
+.hero {
+    min-height: 85vh;
+    background: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    min-height: 85vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 100px;
+}
+
+.overlay h1 {
+    font-size: 65px;
+}
+
+.overlay h2 {
+    font-size: 55px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    max-width: 650px;
+    line-height: 32px;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid gold;
+    padding: 15px 35px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background: gold;
+    color: black;
+}
+
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-banner {
+    min-height: 250px;
+    background: #7b0000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.about-banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about {
+    display: flex;
+    padding: 80px;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image,
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #7b0000;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-points {
+    margin: 30px 0;
+}
+
+.about-points div {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.about-points i {
+    color: green;
+    margin-right: 10px;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #7b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.about-btn:hover {
+    background: #a52a2a;
+}
+
+/* ========================================
+   PAGE BANNER
+======================================== */
+
+.page-banner {
+    background: #7b0000;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.page-banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    font-size: 18px;
+}
+
+/* ========================================
+   MENU PAGE - BREAKFAST, LUNCH, DINNER
+======================================== */
+
+.menu {
+    padding: 50px 8%;
+    text-align: center;
+    background: #fffaf3;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #7b0000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    padding-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card h3 {
+    color: #7b0000;
+    font-size: 25px;
+    margin: 20px 0 10px;
+}
+
+.menu-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 15px;
+    min-height: 48px;
+}
+
+.menu-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #7b0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.menu-btn:hover {
+    background: #a52a2a;
+    color: gold;
+}
+
+/* ========================================
+   BREAKFAST PAGE
+======================================== */
+
+.breakfast-section {
+    background: #fffaf3;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.breakfast-section h2 {
+    color: #7b0000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.breakfast-section .subtitle {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.breakfast-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.food-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-card h3 {
+    color: #7b0000;
+    background: #ffffff;
+    font-size: 21px;
+    padding: 18px 10px;
+    margin: 0;
+    border-bottom: 3px solid gold;
+}
+
+/* ========================================
+   LUNCH PAGE
+======================================== */
+
+.lunch-section {
+    background: #fffaf3;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.lunch-section h2 {
+    color: #7b0000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.lunch-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.lunch-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.lunch-card:hover {
+    transform: translateY(-5px);
+}
+
+.lunch-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.lunch-card h3 {
+    color: #7b0000;
+    font-size: 21px;
+    padding: 18px 10px;
+    margin: 0;
+    border-bottom: 3px solid gold;
+}
+
+/* ========================================
+   DINNER PAGE
+======================================== */
+
+.dinner-section {
+    background: #fffaf3;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.dinner-section h2 {
+    color: #7b0000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.dinner-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.dinner-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.dinner-card:hover {
+    transform: translateY(-5px);
+}
+
+.dinner-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.dinner-card h3 {
+    color: #7b0000;
+    font-size: 21px;
+    padding: 18px 10px;
+    margin: 0;
+    border-bottom: 3px solid gold;
+}
+
+/* ========================================
+   ACCORDION MENU
+======================================== */
+
+.accordion {
+    width: 100%;
+    background: #8B0000;
+    color: #ffffff;
+    padding: 18px;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.accordion:hover,
+.accordion.active {
+    background: #a52a2a;
+}
+
+.panel {
+    display: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.book-btn {
+    margin-top: 20px;
+    background: #8B0000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: #a52a2a;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background: #7b0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+/* ========================================
+   TABLET RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .top-header {
+        padding: 20px 30px;
+    }
+
+    nav {
+        padding: 15px 30px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .contact-info {
+        gap: 15px;
+    }
+
+    .about {
+        padding: 50px 30px;
+        gap: 35px;
+    }
+
+    .overlay {
+        padding: 40px 50px;
+    }
+
+    .overlay h1 {
+        font-size: 52px;
+    }
+
+    .overlay h2 {
+        font-size: 42px;
+    }
+
+    .menu-container,
+    .breakfast-container,
+    .lunch-container,
+    .dinner-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+
+    .top-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 30px;
+    }
+
+    .logo h2 {
+        font-size: 27px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .hero,
+    .overlay {
+        min-height: 70vh;
+    }
+
+    .overlay {
+        padding: 40px 25px;
+    }
+
+    .overlay h1 {
+        font-size: 38px;
+    }
+
+    .overlay h2 {
+        font-size: 32px;
+    }
+
+    .overlay p {
+        width: auto;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-banner h1,
+    .page-banner h1 {
+        font-size: 36px;
+    }
+
+    .menu,
+    .breakfast-section,
+    .lunch-section,
+    .dinner-section {
+        padding: 40px 20px;
+    }
+
+    .menu-container,
+    .breakfast-container,
+    .lunch-container,
+    .dinner-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .menu-card img,
+    .food-card img,
+    .lunch-card img,
+    .dinner-card img {
+        height: 170px;
+    }
+
+    .menu-card h3,
+    .food-card h3,
+    .lunch-card h3,
+    .dinner-card h3 {
+        font-size: 18px;
+    }
+
+    .menu-card p {
+        font-size: 14px;
+    }
+
+    .buttons a {
+        margin-right: 8px;
+        padding: 12px 20px;
+    }
+}
+
+/* ========================================
+   SMALL MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 480px) {
+
+    nav ul {
+        gap: 12px 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .menu-container,
+    .breakfast-container,
+    .lunch-container,
+    .dinner-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card img,
+    .food-card img,
+    .lunch-card img,
+    .dinner-card img {
+        height: 230px;
+    }
+
+    .menu h2,
+    .breakfast-section h2,
+    .lunch-section h2,
+    .dinner-section h2 {
+        font-size: 27px;
+    }
+
+    .page-banner {
+        padding: 45px 15px;
+    }
+
+    .overlay h1 {
+        font-size: 32px;
+    }
+
+    .overlay h2 {
+        font-size: 28px;
+    }
+
+    .about {
+        padding: 30px 18px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .buttons a {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+}
